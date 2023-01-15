@@ -8,9 +8,9 @@
 
             try {
                 $mysql_host = '127.0.0.1';
-                $mysql_username = '(username)';
+                $mysql_username = 'tails1101';
                 $mysql_password = '(password)';
-                $mysql_dbname = '(dbname)';
+                $mysql_dbname = 'tails1101';
 
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $result = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_dbname);
