@@ -6,8 +6,9 @@
     $response['success'] = false;
 
     $uploaddir = 'uploaded/';
-    $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-    
+    $fileNameExt = basename($_FILES['userfile']['name']);
+    $uploadfile = $uploaddir . $fileNameExt;
+
     if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
         $response['success'] = true;
     }
