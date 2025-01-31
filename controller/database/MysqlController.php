@@ -2,15 +2,14 @@
     include 'DBController.php';
 
     class MysqlController implements DBController {
-
         function connect(){
             $result = null;
 
             try {
                 $mysql_host = '127.0.0.1';
-                $mysql_username = 'tails1101';
-                $mysql_password = '(password)';
-                $mysql_dbname = 'tails1101';
+                $mysql_username = '<아이디>';
+                $mysql_password = '<비밀번호>';
+                $mysql_dbname = '<DB명>';
 
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $result = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_dbname);
